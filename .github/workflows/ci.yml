@@ -32,7 +32,7 @@ jobs:
 
   test:
     name: Test (Python ${{ matrix.python-version }})
-    runs-on: [self-hosted]
+    runs-on: [self-hosted, linux, x64]
     timeout-minutes: 10
     strategy:
       fail-fast: false
